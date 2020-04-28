@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Ingreso Alumno</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form th:action="@{/validate}" method="POST">
+        <div class="form-group">
+          <label for="names">Nombres</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="names"
+            name="names"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastNames">Apellidos</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="lastNames"
+            name="lastNames"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dateOfBirth">Fecha de nacimiento</label>
+          <input
+            type="date"
+            class="form-control form-control-sm"
+            id="dateOfBirth"
+            name="dateOfBirth"
+          />
+        </div>
+        <div class="form-group">
+          <label for="birthPlace">Lugar de nacimiento</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="birthPlace"
+            name="birthPlace"
+          />
+        </div>
+        <div class="form-group">
+          <label for="school">Instituto o colegio de procedencia</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="school"
+            name="school"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telephone">Telefono fijo</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="telephone"
+            name="telephone"
+          />
+        </div>
+        <div class="form-group">
+          <label for="cellphone">Celular</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="cellphone"
+            name="cellphone"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Alumno</button>
+      </form>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
